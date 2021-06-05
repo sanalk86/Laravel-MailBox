@@ -45,7 +45,7 @@ class fetchEmail extends Command
         $uid_array[]=$uid->uid;
         }
       }
-      $mbox = imap_open('{imap.gmail.com:993/imap/ssl}', 'harveyspect60@gmail.com', 'zwukybktspqnzwqk');
+      $mbox = imap_open('{imap.gmail.com:993/imap/ssl}', 'test@gmail.com', 'iuwuwdewodoikjjh');
       $MC = imap_check($mbox);
       $result = imap_fetch_overview($mbox,"1:{$MC->Nmsgs}",0);
       foreach ($result as $overview) {
